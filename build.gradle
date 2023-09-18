@@ -1,0 +1,21 @@
+plugins {
+    id 'java-library'
+}
+
+group = 'com.demoqa'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation (
+            'com.codeborne:selenide:6.18.0',
+            'org.junit.jupiter:junit-jupiter:5.10.0'
+    )
+}
+
+test {
+    useJUnitPlatform()
+}
